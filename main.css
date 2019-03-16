@@ -91,54 +91,14 @@ ul.nav li a:hover {
     color:#410924;
 }
 
-.bio-wrapper{
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 5px;
-    padding-top:0px;
-    max-width: auto;
-}
-
-.bioPageRight{
- background-color: #410924;
- width: 50%;
- text-align: center;
- color: white;
-}
-
-.bioPageRight li{
-    list-style-type: none;
-   }
 
 .bioPageRight img{
     padding: 30px;
     width:250px;
     border-radius: 100%;
-    
-   
 }
 
-.bioPageLeft {
-    width: 50%;
-    background-color: green;
+.fab {
+    font-size: 120px;
+    color: #410924;
 }
-
-.box-title{
-    margin-top:75px;
-    margin-bottom:0px;
-    margin-left:375px;
-    font-size: 30px;
-
-}
-.wordbox {
-    margin-top: 5px;
-    border: 2px solid #410924;
-    max-width: 500px;
-    margin-right: 200px;
-    margin-left: 200px;
-    border-radius: 0% 10% 0% 10%;
-    padding: 7px;
-
-}
-

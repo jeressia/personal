@@ -1,6 +1,11 @@
 
 # Personal Page
 This page is my personal portfolio page that gives more information about me, the software I have used, and projects that I have created.
+
+## Screenshots
+
+![personal page screenshot](https://github.com/jeressia/personal/blob/master/personal.png?raw=true)
+
 ## Getting Started
 ```
 $ git clone ---

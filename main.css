@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('./images/bg.jpg');
+    background-color:white;
     background-repeat: no-repeat, repeat;
     background-size: 100% 100%;
     font-family: 'Montserrat', sans-serif;
@@ -12,19 +12,22 @@ body {
 .head-container {
     display: flex;
     justify-content: space-between;
-    background: rgb(224, 181, 196);
+    background: #3f1707;
     padding: 10px;
     border-bottom: 3px solid rgb(207, 171, 183);
+    color: #363636;
 }
 
 .main-title {
     margin-left: 10px;
     padding:5px;
+    color: #fff;
     
 }
 
 .main-social {
     display: flex;
+    color: #fff;
 }
 
 .social-icon {
@@ -43,6 +46,22 @@ body {
     color: #363636;
 }
 
+/* Header */
+
+.name {
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Bio Page */
+bioPage{
+    top: 0px;
+}
+
+/*Footer */
 .page-footer {
     background-color:#fff;
     text-align: center;
@@ -50,7 +69,22 @@ body {
     height: auto;
 }
 
+.photo-container {
+    display: flex;
+    max-width: 960px;
+    justify-content: center;
+}
 
+.photo1 img, .photo2 img{
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px;
+}
+
+.photo2 img{
+    margin-top: 5px;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
@@ -73,6 +107,12 @@ body {
     .main-title {
         padding:0px;
         text-align: center;
+    }
+
+    .name {
+        position: absolute;
+        top: 20%;
+        left: 3%;
     }
 
   }

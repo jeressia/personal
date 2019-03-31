@@ -3,27 +3,85 @@
     src: url("./WesttgoniaBarneh.ttf");
   }
 
+  @font-face {
+    font-family: "SkinnyJeans";
+    src: url("./SkinnyJeans.ttf");
+  }
+
 * {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 /*Title & NavBar*/
 .navbar-nav {
     padding-top: 15px;
 }
+.navbar-light .navbar-brand {
+    color: #ffffff;
+  letter-spacing: .1em;
+  font-size: 3vw;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link  {
+    color: #ffffff;
+    font-size: 2vw;
+    padding: 15px;
+    font-family: SkinnyJeans;
+}
+
+.nav-item a:hover {
+        -webkit-animation: neon 1.5s ease-in-out infinite alternate; 
+      }
+      @-webkit-keyframes neon {
+        from {
+          text-shadow: 0 0 10px #fff,
+                     0 0 20px  #c4000d,
+                     0 0 30px  #c4000d,
+                     0 0 40px  #c4000d,
+                     0 0 70px  #c4000d,
+                     0 0 80px  #c4000d,
+                     0 0 100px #c4000d,
+                     0 0 150px #c4000d;
+        }
+        to {
+          text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #fff,
+                     0 0 20px red,
+                     0 0 35px red,
+                     0 0 40px red,
+                     0 0 50px red,
+                     0 0 75px red;
+        }
+      }
+
 .navbar-brand {
     margin-left: 10px;
     padding-top:0px;
     font-size: 3vw;
     font-family: WesttgoniaBarneh;
+    color: white;
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
 }
 
 .subBrand {
     font-family: monospace;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: center;
     margin-bottom: 0px;
     
@@ -36,15 +94,23 @@ body {
 }
 
 .fab {
-    font-size: 1vw;
-}
-
-.social-icon {
+    font-size: 2vw;
     margin-left: 10px;
     margin-right: 10px;
     padding:5px;
 }
 
+.main-image {
+    z-index: -1;
+    position: absolute;
+    top:0px;
+}
+
+.main-image img{
+max-width: 100%;
+max-height:100%;
+opacity: .7;
+}
 
 /*Footer */
 .page-footer {

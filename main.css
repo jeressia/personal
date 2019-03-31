@@ -1,33 +1,42 @@
+@font-face {
+    font-family: "WesttgoniaBarneh";
+    src: url("./WesttgoniaBarneh.ttf");
+  }
+
 * {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color:white;
-    background-repeat: no-repeat, repeat;
-    background-size: 100% 100%;
     font-family: 'Montserrat', sans-serif;
 }
 /*Title & NavBar*/
-.head-container {
-    display: flex;
-    justify-content: space-between;
-    background: #3f1707;
-    padding: 10px;
-    border-bottom: 3px solid rgb(207, 171, 183);
-    color: #363636;
+.navbar-nav {
+    padding-top: 15px;
+}
+.navbar-brand {
+    margin-left: 10px;
+    padding-top:0px;
+    font-size: 3vw;
+    font-family: WesttgoniaBarneh;
 }
 
-.main-title {
-    margin-left: 10px;
-    padding:5px;
-    color: #fff;
+.subBrand {
+    font-family: monospace;
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 0px;
     
 }
 
 .main-social {
     display: flex;
-    color: #fff;
+    padding:0px;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 1vw;
 }
 
 .social-icon {
@@ -36,30 +45,6 @@ body {
     padding:5px;
 }
 
-.navbar {
-    top: 35px;
-    background:#E0E0E0;
-    z-index: 1;
-    border-radius: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #363636;
-}
-
-/* Header */
-
-.name {
-    position: absolute;
-    top: 25%;
-    left: 27%;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-/*Bio Page */
-bioPage{
-    top: 0px;
-}
 
 /*Footer */
 .page-footer {
@@ -69,50 +54,11 @@ bioPage{
     height: auto;
 }
 
-.photo-container {
-    display: flex;
-    max-width: 960px;
-    justify-content: center;
-}
 
-.photo1 img, .photo2 img{
-    max-width: 400px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px;
-}
-
-.photo2 img{
-    margin-top: 5px;
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
-    .navbar{
-    top:60px;
-    z-index: 1;
-    border-radius: 0px;
-    margin:0 auto;
-    color: #363636;
-    text-align: center;
-    }
-    .navbar-toggler-icon{
-        margin: 0 auto;
-        background-color: none;
-    }
-    .social-icon {
+    .navbar-brand {
         display: none;
     }
-
-    .main-title {
-        padding:0px;
-        text-align: center;
-    }
-
-    .name {
-        position: absolute;
-        top: 20%;
-        left: 3%;
-    }
-
-  }
+}

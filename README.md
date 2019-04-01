@@ -4,7 +4,6 @@ This page is my personal portfolio page that gives more information about me, th
 
 ## Screenshots
 ![personal page screenshot](https://github.com/jeressia/personal/blob/master/screenshot.png?raw=true)
-![personal page screenshot](https://github.com/jeressia/personal/blob/master/personal.png?raw=true)
 
 ## Getting Started
 ```

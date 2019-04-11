@@ -12,7 +12,7 @@
 
 <body>
   <header>		
-		<nav class="navbar navbar-expand-lg navbar-light ">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -22,7 +22,7 @@
 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" href="#" id="bioLink">About</a>
 				</li>
 				<a class="navbar-brand">
 					Jeressia Williamson
@@ -34,7 +34,7 @@
 				</div>
 				</a>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Portfolio</a>
+					<a class="nav-link" href="#" id="projectLink">Portfolio</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link">Contact</a>
@@ -42,22 +42,26 @@
 				</ul>
 			</div>
 		</nav>
+	<div class="page-wrapper">
 		<div class="main-image"><img src="./images/main.jpg"></div>
+	</div>
   </header>
- 
-
-  <div class="fullPage" id="bioPage">
-    <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-  </div>
-  <div class="fullPage" id="technologiesPage">
-    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-  </div>
-  <div class="fullPage" id="projectsPage"></div>
-  <!-- End Primary View -->
-
-  <!-- Footer -->
+  <div class="fullPage">
+		<div id="bioDiv">
+				<h1>About Me</h1>
+    <p class="aboutMe"><img src="images/bio.jpg" class="me"> This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. This is my bio because my name is Jeressia. </p>
+		</div>
+	</div>
+  <div class="fullPage" id="techDiv">
+   
+  <div class="fullPage"> 
+		<div id="projectDiv">
+				<h1>Portfolio</h1>
+			<div id="array"></div>
+		</div>
+	</div>
   <footer class="page-footer">
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
+    Jeressia Jay Williamson
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

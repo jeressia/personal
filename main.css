@@ -115,10 +115,14 @@ opacity: .7;
 h1{
     text-align: center;
     margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     border-radius: 5px 5px 0px 0px;
     background-color:  rgb(255, 255, 255);
     font-family:WesttgoniaBarneh;
     color: maroon;
+    display: block;
 }
 .card {
     text-align: center;
@@ -143,24 +147,37 @@ h1{
     padding-bottom: 5px;
 }
 
-.aboutMe{
+#bioDiv{
     display: flex;
-    flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.548);
     justify-content: center;
     border-radius: 0px 0px 5px 5px;
     padding: 15px;
-    max-width: 500px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     max-height: 700px;
+    max-width: 700px;
     overflow: hidden;
     overflow-y:auto;
     color: #4b4b4b;
+    align-content: space-between;
+}
+.aboutMeStats{
+    flex-basis: 1;
+    display: flex;
 }
 
+.aboutMeBio {
+    flex-basis: 1;
+    flex-grow: 3;
+    display: flex;
+}
 .me {
-    height: 30%;
+    height: 25%;
     width:30%;
     border-radius: 100%;
+    display: block;
 }
 /*Footer */
 .page-footer {
